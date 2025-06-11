@@ -4,6 +4,12 @@ import librosa
 import numpy as np
 import tempfile
 import os
+st.set_page_config(
+    page_title="🎵 Afrobeat & Amapiano AI Prompt Generator Pro",
+    page_icon="🎵",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
 # Fix white text problem
 st.markdown("""
 <style>
@@ -17,12 +23,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 # Set page config
-st.set_page_config(
-    page_title="🎵 Afrobeat & Amapiano AI Prompt Generator Pro",
-    page_icon="🎵",
-    layout="wide",
-    initial_sidebar_state="collapsed"
-)
+
 
 # Custom CSS for professional styling
 st.markdown("""
