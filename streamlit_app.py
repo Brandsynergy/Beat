@@ -4,7 +4,18 @@ import librosa
 import numpy as np
 import tempfile
 import os
-
+# Fix white text problem
+st.markdown("""
+<style>
+    .stTextArea textarea {
+        color: black !important;
+        background-color: white !important;
+    }
+    div[data-testid="stMarkdownContainer"] {
+        color: black !important;
+    }
+</style>
+""", unsafe_allow_html=True)
 # Set page config
 st.set_page_config(
     page_title="🎵 Afrobeat & Amapiano AI Prompt Generator Pro",
