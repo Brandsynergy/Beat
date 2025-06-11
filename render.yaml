@@ -1,0 +1,10 @@
+version: 2
+services:
+  - type: web
+    name: afrobeat-analyzer
+    env: python
+    buildCommand: pip install -r requirements_web.txt
+    startCommand: streamlit run streamlit_app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.16
